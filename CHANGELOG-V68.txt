@@ -1,0 +1,6 @@
+V68 — Suivi Google Ads du formulaire
+
+- Déclenchement de la conversion Google Ads uniquement après un envoi réussi du formulaire de contact.
+- Conversion : AW-18445047687/9E30CJDJo_QcEIevpNtE.
+- Aucun événement n'est envoyé en cas d'erreur d'envoi ou de formulaire invalide.
+- Conservation de la balise Google Ads globale ajoutée en V67.

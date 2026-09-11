@@ -27,6 +27,19 @@ export default function ContactForm() {
     if (response.ok) {
       setStatus("Votre message a bien été envoyé.");
       form.reset();
+
+      // Google Ads : comptabilise une conversion uniquement après un envoi réussi.
+      const googleWindow = window as typeof window & {
+        gtag?: (...args: unknown[]) => void;
+      };
+
+      if (typeof googleWindow.gtag === "function") {
+        googleWindow.gtag("event", "conversion", {
+          send_to: "AW-18445047687/9E30CJDJo_QcEIevpNtE",
+          value: 1.0,
+          currency: "EUR"
+        });
+      }
     } else {
       setStatus("Erreur lors de l’envoi. Vous pouvez écrire directement à tom.fauvel@fauvel-avocat.fr.");
     }
