@@ -4,8 +4,8 @@ import PublicationList from "../../components/PublicationList";
 import { articles } from "../../lib/articles-data";
 
 export const metadata: Metadata = {
-  title: "Droit des sociétés | Fauvel Avocat",
-  description: "Accompagnement en droit des sociétés : constitution, gouvernance, opérations sur capital, transmission, groupes et relations entre associés.",
+  title: "Avocat en droit des sociétés",
+  description: "Droit des sociétés : constitution, gouvernance, opérations sur capital, transmission, holdings et relations entre associés.",
   alternates: { canonical: "/societe" }
 };
 

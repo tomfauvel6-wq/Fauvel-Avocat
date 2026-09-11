@@ -6,10 +6,16 @@ import AnimatedHomeColumn from "../components/AnimatedHomeColumn";
 import { articles } from "../lib/articles-data";
 
 export const metadata: Metadata = {
-  title: "Fiscalité, droit des sociétés et droit commercial",
-  description: "Fauvel Avocat accompagne dirigeants, entrepreneurs et particuliers en fiscalité, droit des sociétés, droit commercial et contentieux.",
-  keywords: ["avocat fiscaliste Paris", "contrôle fiscal", "droit des sociétés", "droit commercial", "Fauvel Avocat"],
-  alternates: { canonical: "/" }
+  title: { absolute: "Fauvel Avocat | Avocat fiscaliste à Paris" },
+  description: "Fauvel Avocat, cabinet d’avocat fiscaliste à Paris, accompagne particuliers, dirigeants et entreprises en fiscalité française et internationale, contrôle et contentieux fiscal et droit des sociétés.",
+  keywords: ["Fauvel Avocat", "Tom Fauvel", "avocat fiscaliste Paris", "contrôle fiscal", "contentieux fiscal", "fiscalité internationale", "droit des sociétés"],
+  alternates: { canonical: "/" },
+  openGraph: {
+    title: "Fauvel Avocat | Avocat fiscaliste à Paris",
+    description: "Fiscalité française et internationale, contrôle et contentieux fiscal, droit des sociétés.",
+    url: "/",
+    images: ["/images/og-image.png"]
+  }
 };
 
 const interventions = [

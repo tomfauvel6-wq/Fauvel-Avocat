@@ -3,14 +3,9 @@ import Link from "next/link";
 import PageHero from "../../../components/PageHero";
 
 export const metadata: Metadata = {
-  title: "Déclaration et régularisation fiscale | Fauvel Avocat",
-  description: "Régularisation fiscale : déclaration spontanée, comptes et actifs étrangers, revenus omis, régularisation avant ou pendant un contrôle et sécurisation des obligations déclaratives.",
-  alternates: { canonical: "/fiscal/declaration-et-regularisation" },
-  openGraph: {
-    title: "Déclaration et régularisation fiscale | Fauvel Avocat",
-    description: "Régulariser sa situation fiscale de manière spontanée, documentée et maîtrisée.",
-    images: ["/images/hero/fiscal.jpg"]
-  }
+  title: "Déclaration et régularisation fiscale",
+  description: "Régularisation fiscale : revenus omis, comptes et actifs étrangers, déclarations spontanées et sécurisation des obligations déclaratives.",
+  alternates: { canonical: "/fiscal/declaration-et-regularisation" }
 };
 
 const axes = [

@@ -15,6 +15,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/fiscal/declaration-et-regularisation",
     "/societe",
     "/commercial",
+    "/contentieux-fiscal",
+    "/holding-patrimoniale",
     "/mentions-legales",
     "/politique-confidentialite",
     "/fiscalite-patrimoniale",
@@ -33,7 +35,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   return [...staticRoutes, ...articleRoutes].map((route) => ({
     url: `${baseUrl}${route}`,
-    lastModified: new Date("2026-06-09"),
+    lastModified: new Date("2026-09-11"),
     changeFrequency: route === "/publications" || articleRoutes.includes(route) ? "monthly" : "yearly",
     priority: route === "" ? 1 : articleRoutes.includes(route) ? 0.9 : 0.7
   }));

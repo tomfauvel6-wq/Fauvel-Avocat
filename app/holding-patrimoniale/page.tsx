@@ -4,7 +4,8 @@ import PageHero from "../../components/PageHero";
 
 export const metadata: Metadata = {
   title: "Holding patrimoniale",
-  description: "Structuration de holdings, apports de titres, régime mère-fille et transmission.",
+  description: "Structuration de holdings, apports de titres, régime mère-fille, transmission et fiscalité des groupes.",
+  alternates: { canonical: "/holding-patrimoniale" }
 };
 
 export default function SeoPage() {

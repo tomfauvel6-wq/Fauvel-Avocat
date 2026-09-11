@@ -5,7 +5,8 @@ import PageHero from "../../components/PageHero";
 
 export const metadata: Metadata = {
   title: "Fiscalité internationale",
-  description: "Résidence fiscale et conventions fiscales internationales.",
+  description: "Résidence fiscale, conventions fiscales, revenus étrangers, expatriation, impatriation et problématiques transfrontalières.",
+  alternates: { canonical: "/fiscalite-internationale" }
 };
 
 export default function Page() {

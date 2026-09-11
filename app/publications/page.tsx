@@ -4,14 +4,9 @@ import PublicationsExplorer from "../../components/PublicationsExplorer";
 import { articles } from "../../lib/articles-data";
 
 export const metadata: Metadata = {
-  title: "Publications | Fauvel Avocat",
-  description: "Analyses et réflexions de Fauvel Avocat en fiscalité, droit des sociétés, droit commercial et contentieux.",
-  alternates: { canonical: "/publications" },
-  openGraph: {
-    title: "Publications | Fauvel Avocat",
-    description: "Éclairages pratiques en fiscalité, droit des sociétés et droit commercial.",
-    images: ["/images/hero/publications.jpg"]
-  }
+  title: "Publications",
+  description: "Analyses de Fauvel Avocat en fiscalité, fiscalité internationale, droit des sociétés et contentieux.",
+  alternates: { canonical: "/publications" }
 };
 
 const macroSections: { label: string; categories: string[] }[] = [

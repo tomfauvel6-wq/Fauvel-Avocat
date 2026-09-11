@@ -4,9 +4,10 @@ import Link from "next/link";
 import PageHero from "../../components/PageHero";
 
 export const metadata: Metadata = {
-  title: "Cabinet",
-  description: "Présentation de Fauvel Avocat : fiscalité, droit des sociétés, droit commercial et valeurs du cabinet.",
-  keywords: ["Fauvel Avocat", "cabinet avocat fiscaliste", "avocat fiscaliste Paris", "droit des sociétés", "droit commercial"]
+  title: "Tom Fauvel – Avocat au Barreau de Paris",
+  description: "Présentation de Maître Tom Fauvel et du cabinet Fauvel Avocat à Paris, intervenant principalement en droit fiscal et droit des sociétés.",
+  keywords: ["Tom Fauvel", "Fauvel Avocat", "avocat fiscaliste Paris", "avocat Barreau de Paris"],
+  alternates: { canonical: "/cabinet" }
 };
 
 const sequence = [

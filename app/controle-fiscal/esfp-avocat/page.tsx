@@ -5,7 +5,7 @@ import { getArticle } from "../../../lib/articles-data";
 const article = getArticle("esfp-avocat");
 
 export const metadata: Metadata = {
-  title: article?.title || "Publication",
+  title: "ESFP : avocat en contrôle fiscal",
   description: article?.description || "Publication de Fauvel Avocat.",
   alternates: { canonical: article?.path },
   openGraph: {

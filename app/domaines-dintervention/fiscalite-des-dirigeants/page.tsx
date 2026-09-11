@@ -9,7 +9,8 @@ const domaine = getDomaine("fiscalite-des-dirigeants");
 export const metadata: Metadata = {
   title: domaine?.title || "Domaine d’intervention",
   description: domaine?.description || "Domaine d’intervention de Fauvel Avocat.",
-  keywords: domaine?.keywords
+  keywords: domaine?.keywords,
+  alternates: { canonical: "/domaines-dintervention/fiscalite-des-dirigeants" }
 };
 
 export default function Page() {

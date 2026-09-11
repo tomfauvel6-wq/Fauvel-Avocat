@@ -2,13 +2,14 @@ import type { Metadata } from "next";
 import ContactForm from "../../components/ContactForm";
 
 export const metadata: Metadata = {
-  title: "Contact",
-  description: "Contacter Fauvel Avocat à Paris pour une question fiscale, sociétaire, commerciale ou contentieuse. Réponse sous 48 heures ouvrées.",
-  keywords: ["contact Fauvel Avocat", "avocat fiscaliste Paris", "avocat droit des sociétés", "avocat droit commercial"],
+  title: "Contacter Fauvel Avocat – Avocat fiscaliste Paris",
+  description: "Contacter Fauvel Avocat à Paris pour une question de fiscalité, contrôle ou contentieux fiscal, fiscalité internationale ou droit des sociétés. Réponse sous 48 heures ouvrées.",
+  keywords: ["contact Fauvel Avocat", "avocat fiscaliste Paris", "avocat contrôle fiscal", "avocat fiscalité internationale"],
   alternates: { canonical: "/contact" },
   openGraph: {
-    title: "Contact | Fauvel Avocat",
+    title: "Contacter Fauvel Avocat",
     description: "Présenter une situation fiscale, patrimoniale, sociétaire ou commerciale à Fauvel Avocat.",
+    url: "/contact",
     images: ["/images/og-image.png"]
   }
 };

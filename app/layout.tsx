@@ -10,13 +10,13 @@ const baseUrl = "https://fauvel-avocat.fr";
 export const metadata: Metadata = {
   metadataBase: new URL(baseUrl),
   title: {
-    default: "Fauvel Avocat | Fiscalité, sociétés et droit commercial à Paris",
+    default: "Fauvel Avocat | Avocat fiscaliste à Paris",
     template: "%s | Fauvel Avocat"
   },
-  description: "Fauvel Avocat accompagne dirigeants, entrepreneurs, sociétés et particuliers en fiscalité, droit des sociétés, droit commercial et contentieux à Paris.",
+  description: "Fauvel Avocat, cabinet d’avocat fiscaliste à Paris, accompagne particuliers, dirigeants et entreprises en fiscalité française et internationale, contrôle et contentieux fiscal et droit des sociétés.",
   openGraph: {
     title: "Fauvel Avocat",
-    description: "Fiscalité, droit des sociétés, droit commercial et contentieux.",
+    description: "Cabinet d’avocat fiscaliste à Paris : fiscalité française et internationale, contrôle et contentieux fiscal, droit des sociétés.",
     url: baseUrl,
     siteName: "Fauvel Avocat",
     locale: "fr_FR",
@@ -26,7 +26,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Fauvel Avocat",
-    description: "Fiscalité, droit des sociétés, droit commercial et contentieux.",
+    description: "Cabinet d’avocat fiscaliste à Paris : fiscalité française et internationale, contrôle et contentieux fiscal, droit des sociétés.",
     images: ["/images/og-image.png"]
   },
   keywords: [
@@ -36,7 +36,9 @@ export const metadata: Metadata = {
     "contentieux fiscal",
     "fiscalité patrimoniale",
     "fiscalité internationale",
-    "holding patrimoniale"
+    "holding patrimoniale",
+    "Fauvel Avocat",
+    "Tom Fauvel"
   ],
   alternates: {
     canonical: baseUrl
@@ -47,18 +49,35 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   const legalServiceJsonLd = {
     "@context": "https://schema.org",
     "@type": "LegalService",
+    "@id": `${baseUrl}/#cabinet`,
     name: "Fauvel Avocat",
+    legalName: "Fauvel Avocat",
     url: baseUrl,
-    areaServed: "France",
+    telephone: "+33624067681",
+    email: "tom.fauvel@fauvel-avocat.fr",
+    areaServed: { "@type": "Country", name: "France" },
     address: {
       "@type": "PostalAddress",
+      streetAddress: "222 boulevard Saint-Germain",
+      postalCode: "75007",
       addressLocality: "Paris",
       addressCountry: "FR",
       addressRegion: "Île-de-France"
     },
-    legalName: "Fauvel Avocat",
+    founder: { "@id": `${baseUrl}/#tom-fauvel` },
     slogan: "Fiscalité, droit des sociétés, droit commercial et contentieux",
-    knowsAbout: ["Contrôle fiscal", "Contentieux fiscal", "Fiscalité patrimoniale", "Fiscalité internationale", "IFI", "Crypto-actifs", "Droit des sociétés", "Droit commercial"]
+    knowsAbout: ["Contrôle fiscal", "Contentieux fiscal", "Fiscalité patrimoniale", "Fiscalité internationale", "Fiscalité franco-américaine", "IFI", "Crypto-actifs", "Droit des sociétés", "Structuration de holdings", "Droit commercial"]
+  };
+
+  const personJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "@id": `${baseUrl}/#tom-fauvel`,
+    name: "Tom Fauvel",
+    jobTitle: "Avocat au Barreau de Paris",
+    url: `${baseUrl}/cabinet`,
+    worksFor: { "@id": `${baseUrl}/#cabinet` },
+    knowsAbout: ["Droit fiscal", "Contrôle fiscal", "Contentieux fiscal", "Fiscalité internationale", "Droit des sociétés"]
   };
 
   return (
@@ -85,6 +104,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         </Script>
 
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(legalServiceJsonLd) }} />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(personJsonLd) }} />
       </body>
     </html>
   );

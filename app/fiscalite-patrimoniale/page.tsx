@@ -5,7 +5,8 @@ import PageHero from "../../components/PageHero";
 
 export const metadata: Metadata = {
   title: "Fiscalité patrimoniale",
-  description: "Structuration et transmission du patrimoine.",
+  description: "Fiscalité du patrimoine : détention, transmission, plus-values, IFI et structuration patrimoniale.",
+  alternates: { canonical: "/fiscalite-patrimoniale" }
 };
 
 export default function Page() {

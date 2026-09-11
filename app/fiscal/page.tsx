@@ -4,8 +4,8 @@ import PublicationList from "../../components/PublicationList";
 import { articles } from "../../lib/articles-data";
 
 export const metadata: Metadata = {
-  title: "Droit fiscal | Fauvel Avocat",
-  description: "Publications et interventions du cabinet en droit fiscal : contrôle fiscal, contentieux, fiscalité patrimoniale, fiscalité internationale et fiscalité des dirigeants.",
+  title: "Avocat fiscaliste à Paris",
+  description: "Droit fiscal : contrôle et contentieux fiscal, fiscalité patrimoniale, fiscalité internationale et fiscalité des dirigeants.",
   alternates: { canonical: "/fiscal" }
 };
 

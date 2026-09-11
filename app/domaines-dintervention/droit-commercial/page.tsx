@@ -9,7 +9,8 @@ const domaine = getDomaine("droit-commercial");
 export const metadata: Metadata = {
   title: domaine?.title || "Domaine d’intervention",
   description: domaine?.description || "Domaine d’intervention de Fauvel Avocat.",
-  keywords: domaine?.keywords
+  keywords: domaine?.keywords,
+  alternates: { canonical: "/domaines-dintervention/droit-commercial" }
 };
 
 export default function Page() {

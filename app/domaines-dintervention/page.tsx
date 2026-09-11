@@ -4,8 +4,7 @@ import PageHero from "../../components/PageHero";
 
 export const metadata: Metadata = {
   title: "Domaines d’intervention",
-  description: "Domaines d’intervention du cabinet Fauvel Avocat : droit fiscal, droit des sociétés et droit commercial, en conseil comme en contentieux, au national comme à l’international.",
-  keywords: ["domaines intervention avocat fiscaliste", "contrôle fiscal", "droit des sociétés", "droit commercial", "avocat Paris"],
+  description: "Fiscalité, droit des sociétés et droit commercial : domaines d’intervention de Fauvel Avocat à Paris et dans toute la France.",
   alternates: { canonical: "/domaines-dintervention" }
 };
 

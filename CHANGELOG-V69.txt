@@ -1,0 +1,11 @@
+V69 — SEO technique invisible
+
+- Aucun changement visuel ni aucun changement de contenu affiché.
+- Titre SEO de l’accueil : « Fauvel Avocat | Avocat fiscaliste à Paris ».
+- Métadonnées title/description renforcées sur les principales pages.
+- Suppression des doublons de marque dans certains titres générés par le template Next.js.
+- URL canonical ajoutée/normalisée sur les pages stratégiques et les pages de domaines.
+- Données structurées Schema.org enrichies pour Fauvel Avocat (LegalService) et Tom Fauvel (Person).
+- Sitemap complété et date de mise à jour actualisée.
+- robots.txt conservé : indexation autorisée et sitemap déclaré.
+- Balise Google Ads et suivi de conversion V68 conservés à l’identique.

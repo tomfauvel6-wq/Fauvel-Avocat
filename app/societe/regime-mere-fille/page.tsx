@@ -5,7 +5,7 @@ import { getArticle } from "../../../lib/articles-data";
 const article = getArticle("regime-mere-fille");
 
 export const metadata: Metadata = {
-  title: article?.title || "Publication",
+  title: "Régime mère-fille",
   description: article?.description || "Publication de Fauvel Avocat.",
   alternates: { canonical: article?.path },
   openGraph: {

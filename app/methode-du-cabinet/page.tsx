@@ -3,14 +3,9 @@ import Link from "next/link";
 import PageHero from "../../components/PageHero";
 
 export const metadata: Metadata = {
-  title: "Honoraires | Fauvel Avocat",
-  description: "Honoraires de Fauvel Avocat : modalités d’honoraires transparentes (accompagnement récurrent, forfait, temps passé, honoraire de résultat) et convention écrite préalable.",
-  alternates: { canonical: "/methode-du-cabinet" },
-  openGraph: {
-    title: "Honoraires | Fauvel Avocat",
-    description: "Des honoraires définis avec clarté pour les dossiers fiscaux, sociétaires et commerciaux.",
-    images: ["/images/hero/honoraires.jpg"]
-  }
+  title: "Honoraires",
+  description: "Honoraires de Fauvel Avocat : forfait, temps passé, accompagnement récurrent et honoraire de résultat, avec convention écrite préalable.",
+  alternates: { canonical: "/methode-du-cabinet" }
 };
 
 const modes = [

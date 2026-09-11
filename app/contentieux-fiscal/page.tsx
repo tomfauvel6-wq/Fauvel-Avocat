@@ -4,7 +4,8 @@ import PageHero from "../../components/PageHero";
 
 export const metadata: Metadata = {
   title: "Contentieux fiscal",
-  description: "Réclamations contentieuses, sursis de paiement, garanties et procédures devant le tribunal administratif.",
+  description: "Réclamations contentieuses, sursis de paiement, garanties et procédures fiscales devant l’administration et le tribunal administratif.",
+  alternates: { canonical: "/contentieux-fiscal" }
 };
 
 export default function SeoPage() {

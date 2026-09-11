@@ -5,7 +5,7 @@ import { getArticle } from "../../../lib/articles-data";
 const article = getArticle("fiscalite-franco-americaine");
 
 export const metadata: Metadata = {
-  title: article?.title || "Publication",
+  title: "Fiscalité France–États-Unis",
   description: article?.description || "Publication de Fauvel Avocat.",
   alternates: { canonical: article?.path },
   openGraph: {

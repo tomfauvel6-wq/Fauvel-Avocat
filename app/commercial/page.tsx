@@ -4,8 +4,8 @@ import PublicationList from "../../components/PublicationList";
 import { articles } from "../../lib/articles-data";
 
 export const metadata: Metadata = {
-  title: "Droit commercial | Fauvel Avocat",
-  description: "Accompagnement en droit commercial : contrats, impayés, négociations, mise en demeure, contentieux et procédures d’urgence.",
+  title: "Avocat en droit commercial",
+  description: "Droit commercial : contrats, impayés, négociations, mise en demeure, contentieux et procédures d’urgence.",
   alternates: { canonical: "/commercial" }
 };
 
