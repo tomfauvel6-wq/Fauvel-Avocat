@@ -1,0 +1,89 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html { scroll-behavior: smooth; }
+body { margin: 0; background: #F4F1EA; color: #071A33; -webkit-font-smoothing: antialiased; text-rendering: optimizeLegibility; }
+html.dark body { background: #071A33; color: #F4F1EA; }
+
+::selection { background: #B79A62; color: #071A33; }
+
+.container-premium {
+  width: min(1180px, calc(100% - 48px));
+  margin: 0 auto;
+}
+
+.link-premium { position: relative; }
+.link-premium:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: 0;
+  height: 1px;
+  background: #B79A62;
+  transition: width .25s ease;
+}
+.link-premium:hover:after { width: 100%; }
+
+.card-premium {
+  transition: transform .28s ease, background .28s ease, border-color .28s ease, box-shadow .28s ease;
+}
+.card-premium:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 18px 42px rgba(7,26,51,.07);
+}
+
+.prose-premium h2 {
+  font-family: Georgia, serif;
+  font-size: 2.15rem;
+  line-height: 1.18;
+  margin-top: 3.25rem;
+  margin-bottom: 1.5rem;
+  color: #071A33;
+}
+html.dark .prose-premium h2 { color: #F4F1EA; }
+.prose-premium p {
+  font-size: 17px;
+  line-height: 1.95;
+  color: rgba(6,25,51,.78);
+}
+.prose-premium p + p { margin-top: 1.35rem; }
+html.dark .prose-premium p { color: rgba(244,241,234,.74); }
+.prose-premium ul {
+  margin: 1.5rem 0;
+  padding-left: 1.2rem;
+  font-size: 17px;
+  line-height: 1.9;
+  color: rgba(6,25,51,.78);
+}
+html.dark .prose-premium ul { color: rgba(244,241,234,.72); }
+
+@media (max-width: 768px) {
+  .container-premium { width: min(100% - 28px, 1180px); }
+}
+
+
+.section-premium { padding-top: 5.5rem; padding-bottom: 5.5rem; }
+.surface-premium { border: 1px solid rgba(7,26,51,.10); background: rgba(255,255,255,.42); box-shadow: 0 18px 60px rgba(7,26,51,.045); }
+.eyebrow-premium { font-size: 10px; font-weight: 700; letter-spacing: .30em; text-transform: uppercase; color: #B79A62; }
+.title-premium { font-family: Georgia, serif; letter-spacing: -.03em; color: #071A33; }
+.text-premium { color: rgba(7,26,51,.68); line-height: 1.9; }
+html.dark .title-premium { color: #F4F1EA; }
+html.dark .text-premium { color: rgba(244,241,234,.68); }
+@media (max-width: 768px) {
+  .section-premium { padding-top: 4rem; padding-bottom: 4rem; }
+}
+
+/* --- Accessibilité (WCAG AA) ---
+   Le gold #B79A62 a un contraste de 2.38 sur fond clair (échec AA pour le petit texte).
+   Sur les fonds sombres (header, hero, dark mode) il reste à 6.49 (OK), on n'y touche pas.
+   .text-gold-ink fournit un or assombri #806C45 (ratio 4.50 sur ivory) pour le petit texte
+   sur fond clair : labels, kickers, dates, catégories. */
+.text-gold-ink { color: #806C45; }
+html.dark .text-gold-ink { color: #B79A62; }
+
+/* Sécurise les corps de texte les plus pâles en mode clair :
+   navy/55 (3.81) et navy/60 (4.46) passent sous AA en petit texte -> relevés à ~navy/68 (5.76). */
+.prose-premium p, .prose-premium li { color: rgba(6,25,51,.78); }
+html.dark .prose-premium p, html.dark .prose-premium li { color: rgba(244,241,234,.74); }

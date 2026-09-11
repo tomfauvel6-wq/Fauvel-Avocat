@@ -1,0 +1,11 @@
+CHANGELOG V65 — Fauvel Avocat
+================================
+
+Portrait
+- Nouvelle photo intégrée sous le nom public/images/portrait-tom-fauvel.jpg (667x1000 px,
+  54 Ko, JPEG progressif), utilisée sur l accueil et la page Cabinet.
+- La photo est plus haute (2/3) que le cadre (4/5) : point focal réglé sur le visage
+  (object-position 50% 28%) pour que le recadrage ne coupe ni la tête ni les bras.
+- Texte alternatif : « Maître Tom Fauvel, avocat au barreau de Paris ».
+
+Build : succès.
