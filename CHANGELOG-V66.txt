@@ -1,0 +1,21 @@
+CHANGELOG V66 — Fauvel Avocat
+================================
+
+Mentions légales
+- Numéro de TVA intracommunautaire renseigné : FR 86 904 572 781.
+- Mentions « à confirmer » (hébergeur) et « à vérifier » (médiateur) retirées ; les
+  coordonnées du médiateur de la consommation ont été vérifiées auprès de l Ordre.
+  Plus aucun crochet dans la page.
+
+Articles
+- Date de publication des trois articles passée au 11 septembre 2026.
+
+Formulaire de contact
+- Case à cocher de consentement supprimée, remplacée par une phrase d acceptation
+  (« En envoyant ce message, vous acceptez... »). Route d envoi mise à jour.
+
+Présentations
+- Adresse Avocap retirée du bandeau photo de l accueil et de la page Cabinet ; elle reste
+  dans le pied de page, la page Contact et les mentions légales.
+
+Build : succès.

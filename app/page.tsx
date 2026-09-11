@@ -100,7 +100,6 @@ export default function HomePage() {
             <div className="space-y-5 text-[17px] leading-9 text-navy/72">
               <p>Fondé en 2026 par Maître Tom Fauvel, avocat au barreau de Paris, le cabinet Fauvel Avocat intervient en droit fiscal et en droit des sociétés.</p>
               <p>Il conseille et défend dirigeants, entreprises et particuliers, de la sécurisation d’une opération à la défense devant le juge de l’impôt, avec une exigence constante d’analyse et de stratégie.</p>
-              <p className="text-[15px] leading-8 text-navy/60">Le cabinet reçoit sur rendez-vous à Avocap, 222 boulevard Saint-Germain, 75007 Paris.</p>
             </div>
 
             <figure className="mt-8 border-l border-gold/50 pl-5">

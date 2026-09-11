@@ -19,7 +19,6 @@ export default function ContactForm() {
         email: data.get("email"),
         phone: data.get("phone"),
         message: data.get("message"),
-        consent: data.get("consent"),
         company: data.get("company")
       }),
       headers: { "Content-Type": "application/json" }
@@ -57,10 +56,9 @@ export default function ContactForm() {
         <label htmlFor="cf-message" className="sr-only">Votre message</label>
         <textarea id="cf-message" name="message" required className="min-h-40 w-full flex-1 border border-navy/15 bg-transparent px-5 py-4 text-[15px] outline-none focus:border-gold" placeholder="Votre message" />
       </div>
-      <label className="flex gap-3 text-[13px] leading-6 text-navy/70">
-        <input name="consent" required type="checkbox" className="mt-1" />
-        <span>J’accepte que les informations transmises soient utilisées afin de répondre à ma demande. Aucune information n’est communiquée à des tiers.</span>
-      </label>
+      <p className="text-[13px] leading-6 text-navy/60">
+        En envoyant ce message, vous acceptez que les informations transmises soient utilisées pour répondre à votre demande. Elles ne sont communiquées à aucun tiers.
+      </p>
       <button className="bg-gold px-7 py-4 text-[12px] font-bold uppercase tracking-[0.18em] text-navy transition hover:bg-navy hover:text-white" type="submit">
         Envoyer la demande →
       </button>

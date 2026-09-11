@@ -3,10 +3,10 @@ import { Resend } from "resend";
 
 export async function POST(request: Request) {
   try {
-    const { name, email, phone, message, consent, company } = await request.json();
+    const { name, email, phone, message, company } = await request.json();
 
     if (company) return NextResponse.json({ ok: true });
-    if (!name || !email || !message || !consent) {
+    if (!name || !email || !message) {
       return NextResponse.json({ error: "Champs obligatoires manquants." }, { status: 400 });
     }
 
