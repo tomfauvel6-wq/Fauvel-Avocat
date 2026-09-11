@@ -1,0 +1,7 @@
+FAUVEL AVOCAT — V67
+11 septembre 2026
+
+- Ajout de la balise Google Ads globale sur l’ensemble du site.
+- ID Google Ads : AW-18445047687.
+- Chargement via next/script avec strategy="afterInteractive".
+- Aucun événement de conversion formulaire n’est ajouté à ce stade : Google Ads doit encore fournir le libellé de conversion (send_to) correspondant à l’action « Envoi de formulaire de lead ».
