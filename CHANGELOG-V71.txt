@@ -1,0 +1,14 @@
+CHANGELOG V71 — Fauvel Avocat
+================================
+
+Balise Google Ads (AW-18445047687)
+- Installée en mode consentement (Google Consent Mode v2) : par défaut, stockages
+  publicitaires et analytiques refusés ; aucun cookie déposé avant accord du visiteur.
+  Google Ads mesure malgré tout les conversions de façon agrégée pour ceux qui refusent.
+- Nouveau composant CookieBanner (Accepter / Refuser, lien vers la politique de
+  confidentialité). Choix mémorisé dans le navigateur.
+
+Politique de confidentialité
+- Paragraphe Cookies réécrit (cookie Google Ads soumis à consentement, durée, retrait).
+
+Build : succès.

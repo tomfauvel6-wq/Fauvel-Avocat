@@ -4,11 +4,22 @@ import "./globals.css";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import Providers from "../components/Providers";
+import CookieBanner from "../components/CookieBanner";
 
 const baseUrl = "https://fauvel-avocat.fr";
 
 export const metadata: Metadata = {
   metadataBase: new URL(baseUrl),
+  icons: {
+    icon: [
+      { url: "/favicon.ico", sizes: "any" },
+      { url: "/favicon-32.png", type: "image/png", sizes: "32x32" },
+      { url: "/icon-192.png", type: "image/png", sizes: "192x192" },
+      { url: "/icon-512.png", type: "image/png", sizes: "512x512" }
+    ],
+    apple: [{ url: "/apple-touch-icon.png", sizes: "180x180" }],
+    shortcut: ["/favicon.ico"]
+  },
   title: {
     default: "Fauvel Avocat | Avocat fiscaliste à Paris",
     template: "%s | Fauvel Avocat"
@@ -89,19 +100,24 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           <Footer />
         </Providers>
 
-        {/* Google Ads global site tag — AW-18445047687 */}
-        <Script
-          src="https://www.googletagmanager.com/gtag/js?id=AW-18445047687"
-          strategy="afterInteractive"
-        />
-        <Script id="google-ads-tag" strategy="afterInteractive">
+        {/* Google Ads (AW-18445047687) en mode consentement : aucun cookie tant que le visiteur n'a pas accepté */}
+        <Script id="google-consent-default" strategy="beforeInteractive">
           {`
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
+            gtag('consent', 'default', {
+              ad_storage: 'denied',
+              ad_user_data: 'denied',
+              ad_personalization: 'denied',
+              analytics_storage: 'denied',
+              wait_for_update: 500
+            });
             gtag('js', new Date());
             gtag('config', 'AW-18445047687');
           `}
         </Script>
+        <Script src="https://www.googletagmanager.com/gtag/js?id=AW-18445047687" strategy="afterInteractive" />
+        <CookieBanner />
 
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(legalServiceJsonLd) }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(personJsonLd) }} />
