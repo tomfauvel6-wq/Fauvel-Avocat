@@ -1,0 +1,6 @@
+CHANGELOG V74 — Fauvel Avocat
+================================
+
+Favicon
+- Le lion remplit désormais toute la case (recadrage serré, pleine largeur), au lieu de
+  flotter au centre avec de la marge dans la pastille des résultats Google.
