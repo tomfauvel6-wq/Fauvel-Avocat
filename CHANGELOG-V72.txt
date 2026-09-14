@@ -1,6 +1,0 @@
-CHANGELOG V72 — Fauvel Avocat
-================================
-
-Bandeau cookies
-- Texte réduit à « Ce site utilise des cookies. En savoir plus », boutons Accepter / Refuser.
-  Le détail reste dans la politique de confidentialité. Bandeau plus étroit.

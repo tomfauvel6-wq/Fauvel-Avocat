@@ -1,0 +1,6 @@
+CHANGELOG V73 — Fauvel Avocat
+================================
+
+Favicon
+- Icônes régénérées à partir du monogramme de gauche : le F est désormais dans le bon sens
+  (il était en miroir dans la version précédente).
