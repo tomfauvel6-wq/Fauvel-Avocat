@@ -45,10 +45,10 @@ export default function CookieBanner() {
     <div
       role="dialog"
       aria-label="Gestion des cookies"
-      className="fixed inset-x-4 bottom-4 z-50 mx-auto max-w-2xl border border-gold/40 bg-navy p-5 text-white shadow-[0_20px_60px_rgba(7,26,51,0.45)] md:inset-x-auto md:right-6 md:bottom-6"
+      className="fixed inset-x-4 bottom-4 z-50 mx-auto max-w-md border border-gold/40 bg-navy p-5 text-white shadow-[0_20px_60px_rgba(7,26,51,0.45)] md:inset-x-auto md:right-6 md:bottom-6"
     >
       <p className="text-[14px] leading-6 text-white/85">
-        Ce site utilise un cookie de mesure publicitaire (Google Ads) afin d’évaluer l’efficacité de ses annonces. Aucun cookie n’est déposé sans votre accord.{" "}
+        Ce site utilise des cookies.{" "}
         <Link href="/politique-confidentialite" className="underline decoration-gold/60 underline-offset-2 hover:text-gold">En savoir plus</Link>
       </p>
       <div className="mt-4 flex flex-wrap gap-3">
