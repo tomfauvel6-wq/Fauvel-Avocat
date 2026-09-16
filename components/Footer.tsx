@@ -6,7 +6,7 @@ const recent = articles.slice(0, 5);
 export default function Footer() {
   return (
     <footer className="bg-[#050E1A] py-16 text-white">
-      <div className="container-premium grid gap-12 md:grid-cols-[1.2fr_0.8fr_0.8fr_0.9fr_1fr]">
+      <div className="container-premium grid gap-10 sm:grid-cols-2 lg:grid-cols-[1.2fr_0.8fr_0.8fr_0.9fr_1fr]">
         <div className="max-w-sm">
           <div className="font-serif text-2xl uppercase tracking-[0.2em]">Fauvel Avocat</div>
           <div className="mt-2 text-[11px] uppercase tracking-[0.3em] text-gold">Avocat fiscaliste · Barreau de Paris</div>

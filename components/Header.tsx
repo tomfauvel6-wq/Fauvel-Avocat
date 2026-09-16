@@ -104,13 +104,13 @@ export default function Header() {
 
       {open && (
         <div className="border-t border-white/10 bg-navy md:hidden">
-          <nav className="container-premium grid gap-5 py-8 text-[12px] font-semibold uppercase tracking-[0.22em] text-white/75">
-            <Link href="/domaines-dintervention" onClick={() => setOpen(false)}>Domaines d’intervention</Link>
-            {domainesMenu.map(([label, href]) => <Link key={href} href={href} onClick={() => setOpen(false)} className="pl-4 text-white/55">{label}</Link>)}
+          <nav className="container-premium grid gap-1 py-6 text-[13px] font-semibold uppercase tracking-[0.22em] text-white/75">
+            <Link href="/domaines-dintervention" onClick={() => setOpen(false)} className="block py-3">Domaines d’intervention</Link>
+            {domainesMenu.map(([label, href]) => <Link key={href} href={href} onClick={() => setOpen(false)} className="block py-3 pl-4 text-white/55">{label}</Link>)}
             {links.map(([label, href]) => (
               <Link key={href} href={href} onClick={() => setOpen(false)}>{label}</Link>
             ))}
-            <Link href="/contact" onClick={() => setOpen(false)}>Contact</Link>
+            <Link href="/contact" onClick={() => setOpen(false)} className="block py-3">Contact</Link>
           </nav>
         </div>
       )}

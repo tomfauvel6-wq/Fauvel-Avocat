@@ -1,0 +1,13 @@
+CHANGELOG V76 — Fauvel Avocat
+================================
+
+Accueil
+- Bandeaux « Domaines d intervention », « Actualités » et « Méthode » retirés. La page se
+  compose désormais du hero, de la présentation (photo + texte + citation) et du contact.
+  Page plus courte, en particulier sur mobile.
+- Code mort correspondant supprimé (listes de domaines, étapes, actualités).
+
+Présentation
+- « Fondé en 2026 » devient « Fondé par Maître Tom Fauvel » (accueil et page Cabinet).
+
+Build : succès.

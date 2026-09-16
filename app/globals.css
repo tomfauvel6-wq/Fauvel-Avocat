@@ -60,7 +60,7 @@ html.dark .prose-premium p { color: rgba(244,241,234,.74); }
 html.dark .prose-premium ul { color: rgba(244,241,234,.72); }
 
 @media (max-width: 768px) {
-  .container-premium { width: min(100% - 28px, 1180px); }
+  .container-premium { width: min(100% - 40px, 1180px); }
 }
 
 
