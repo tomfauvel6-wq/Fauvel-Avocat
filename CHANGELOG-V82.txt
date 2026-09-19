@@ -1,6 +1,0 @@
-CHANGELOG V82 — Fauvel Avocat
-================================
-
-Page Cabinet
-- Le header affiche désormais le portrait (point focal sur le visage) à la place de l image
-  d immeubles.
