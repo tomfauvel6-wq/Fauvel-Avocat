@@ -43,22 +43,25 @@ export async function POST(request: Request) {
       return NextResponse.json({ error: "Message manquant." }, { status: 400 });
     }
 
-    const res = await fetch("https://api.anthropic.com/v1/messages", {
-      method: "POST",
-      headers: {
-        "content-type": "application/json",
-        "x-api-key": apiKey,
-        "anthropic-version": "2023-06-01"
-      },
-      body: JSON.stringify({
-        model: process.env.ASSISTANT_MODEL || "claude-sonnet-4-6",
-        max_tokens: 400,
-        system: SYSTEM_PROMPT,
-        messages
-      })
-    });
+    const candidates = Array.from(new Set([process.env.ASSISTANT_MODEL, "claude-sonnet-4-6", "claude-sonnet-4-5", "claude-3-7-sonnet-latest"].filter(Boolean))) as string[];
+    let res: Response | null = null;
+    let lastError = "";
+    for (const model of candidates) {
+      res = await fetch("https://api.anthropic.com/v1/messages", {
+        method: "POST",
+        headers: { "content-type": "application/json", "x-api-key": apiKey, "anthropic-version": "2023-06-01" },
+        body: JSON.stringify({ model, max_tokens: 400, system: SYSTEM_PROMPT, messages })
+      });
+      if (res.ok) break;
+      lastError = `${res.status} ${(await res.text()).slice(0, 300)}`;
+      console.error(`[assistant] modèle ${model} refusé : ${lastError}`);
+      if (res.status !== 404) break; // 401 (clé), 400 (crédit) ou autre : inutile d'essayer un autre modèle
+    }
+    if (!res || !res.ok) {
+      const code = lastError.startsWith("401") ? "clé API refusée" : lastError.startsWith("400") ? "compte sans crédit ou requête refusée" : lastError.startsWith("404") ? "aucun modèle disponible" : `erreur ${lastError.slice(0, 3)}`;
+      return NextResponse.json({ error: `Assistant indisponible (${code}).` }, { status: 502 });
+    }
 
-    if (!res.ok) return NextResponse.json({ error: "Assistant indisponible." }, { status: 502 });
     const data = await res.json();
     const text = (data.content || []).map((c: { type: string; text?: string }) => (c.type === "text" ? c.text : "")).join("").trim();
     return NextResponse.json({ reply: text || "Je n’ai pas pu formuler de réponse. Vous pouvez utiliser le formulaire de contact." });

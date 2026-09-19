@@ -18,39 +18,71 @@ export default function AssistantWidget() {
   const [messages, setMessages] = useState<Msg[]>([OPENING]);
   const [input, setInput] = useState("");
   const [loading, setLoading] = useState(false);
-  const [sentCount, setSentCount] = useState(0); // nombre de messages déjà transmis
   const [status, setStatus] = useState("");
+  const [sentCount, setSentCount] = useState(0);
   const bottomRef = useRef<HTMLDivElement>(null);
+  const sentRef = useRef(0); // nombre de messages déjà transmis au cabinet
+  const stateRef = useRef<Msg[]>(messages);
+  stateRef.current = messages;
 
-  const userText = messages.filter((m) => m.role === "user").map((m) => m.content).join("\n");
-  const email = userText.match(EMAIL_RE)?.[0] || "";
-  const phone = userText.match(PHONE_RE)?.[0] || "";
+  function contact(list: Msg[]) {
+    const userText = list.filter((m) => m.role === "user").map((m) => m.content).join("\n");
+    return { email: userText.match(EMAIL_RE)?.[0] || "", phone: userText.match(PHONE_RE)?.[0] || "" };
+  }
 
-  useEffect(() => {
-    if (open) bottomRef.current?.scrollIntoView({ behavior: "smooth" });
-  }, [messages, open]);
+  function payload(list: Msg[], update: boolean) {
+    const { email, phone } = contact(list);
+    return JSON.stringify({ messages: list.slice(1), email, phone, update });
+  }
 
   async function transmit(list: Msg[], update: boolean) {
     try {
       const res = await fetch("/api/assistant/transmit", {
         method: "POST",
         headers: { "content-type": "application/json" },
-        body: JSON.stringify({ messages: list.slice(1), email, phone, update })
+        body: payload(list, update)
       });
       if (res.ok) {
+        sentRef.current = list.length;
         setSentCount(list.length);
         setStatus(update ? "Conversation mise à jour auprès du cabinet." : "Conversation transmise au cabinet.");
       }
     } catch {}
   }
 
-  // Envoi automatique dès qu'une adresse e-mail apparaît dans la conversation
+  // Envoi de secours à la sortie (onglet fermé, navigation, mise en arrière-plan) :
+  // le navigateur exécute sendBeacon même après le départ du visiteur.
+  function beaconIfNeeded() {
+    const list = stateRef.current;
+    const userCount = list.filter((m) => m.role === "user").length;
+    if (userCount === 0 || list.length <= sentRef.current) return;
+    try {
+      const blob = new Blob([payload(list, sentRef.current > 0)], { type: "application/json" });
+      if (navigator.sendBeacon("/api/assistant/transmit", blob)) sentRef.current = list.length;
+    } catch {}
+  }
+
   useEffect(() => {
-    if (email && sentCount === 0 && !loading) {
-      transmit(messages, false);
-    }
+    const onHide = () => { if (document.visibilityState === "hidden") beaconIfNeeded(); };
+    window.addEventListener("pagehide", beaconIfNeeded);
+    document.addEventListener("visibilitychange", onHide);
+    return () => {
+      window.removeEventListener("pagehide", beaconIfNeeded);
+      document.removeEventListener("visibilitychange", onHide);
+    };
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [email, loading]);
+  }, []);
+
+  // Première transmission automatique dès le deuxième message du visiteur, e-mail ou non
+  useEffect(() => {
+    const userCount = messages.filter((m) => m.role === "user").length;
+    if (!loading && sentRef.current === 0 && userCount >= 2) transmit(messages, false);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [messages, loading]);
+
+  useEffect(() => {
+    if (open) bottomRef.current?.scrollIntoView({ behavior: "smooth" });
+  }, [messages, open]);
 
   async function send() {
     const text = input.trim();
@@ -75,17 +107,16 @@ export default function AssistantWidget() {
   }
 
   function close() {
-    // Mise à jour si la conversation a continué après le premier envoi
-    if (sentCount > 0 && messages.length > sentCount) transmit(messages, true);
+    const userCount = messages.filter((m) => m.role === "user").length;
+    if (userCount > 0 && messages.length > sentRef.current) transmit(messages, sentRef.current > 0);
     setOpen(false);
   }
 
   function manualTransmit() {
-    if (!email) {
-      setMessages([...messages, { role: "assistant", content: "Pour que je transmette votre demande au cabinet, indiquez-moi votre adresse e-mail et, si possible, votre numéro de téléphone." }]);
-      return;
+    transmit(messages, sentRef.current > 0);
+    if (!contact(messages).email) {
+      setMessages([...messages, { role: "assistant", content: "C’est transmis. Pour que le cabinet puisse vous recontacter, indiquez-moi votre adresse e-mail et votre numéro de téléphone." }]);
     }
-    transmit(messages, sentCount > 0);
   }
 
   return (

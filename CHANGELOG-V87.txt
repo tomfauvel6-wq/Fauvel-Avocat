@@ -1,0 +1,11 @@
+CHANGELOG V87 — Fauvel Avocat
+================================
+
+Jarvis : transmission garantie
+- Première transmission automatique au cabinet dès le deuxième message du visiteur, qu il
+  ait ou non donné son e-mail (auparavant : seulement après saisie d une adresse).
+- Envoi de secours à la sortie : fermeture de la fenêtre, de l onglet, navigation ou mise en
+  arrière-plan déclenchent une mise à jour via navigator.sendBeacon, que le navigateur exécute
+  même si le visiteur est parti.
+- Le bouton « Transmettre au cabinet » envoie immédiatement, puis demande les coordonnées si
+  elles manquent.
