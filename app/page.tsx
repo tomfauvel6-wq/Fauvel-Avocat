@@ -60,8 +60,8 @@ export default function HomePage() {
       </section>
 
       <section className="bg-ivory py-16 text-navy md:py-20 border-b border-navy/10">
-        <div className="container-premium grid items-center gap-12 lg:grid-cols-[0.75fr_1.25fr]">
-          <div className="relative mx-auto aspect-[3/4] w-full max-w-[292px] overflow-hidden shadow-[0_26px_75px_rgba(7,26,51,0.14)]">
+        <div className="container-premium grid items-center gap-12 lg:grid-cols-[0.85fr_1.15fr] lg:items-stretch">
+          <div className="relative mx-auto aspect-[3/4] w-full max-w-[320px] overflow-hidden shadow-[0_26px_75px_rgba(7,26,51,0.14)] lg:aspect-auto lg:h-full lg:min-h-[560px] lg:max-w-none">
             <Image src="/images/portrait-tom-fauvel.jpg" alt="Maître Tom Fauvel, avocat au barreau de Paris" fill sizes="(min-width: 1024px) 420px, 90vw" className="object-cover object-[50%_28%]" />
           </div>
 

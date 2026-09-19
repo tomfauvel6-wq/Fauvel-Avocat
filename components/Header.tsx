@@ -28,7 +28,8 @@ export default function Header() {
           </div>
           <div className="leading-tight">
             <div className="font-serif text-lg uppercase tracking-[0.18em]">Fauvel Avocat</div>
-            <div className="text-[10px] uppercase tracking-[0.32em] text-gold">Fiscaliste - Barreau de Paris</div>
+            <div className="text-[10px] uppercase tracking-[0.32em] text-gold">Avocat fiscaliste - Barreau de Paris</div>
+            <div className="mt-0.5 hidden text-[10px] tracking-[0.08em] text-white/55 sm:block">222 boulevard Saint-Germain, Paris 7ème</div>
           </div>
         </Link>
 
@@ -74,12 +75,15 @@ export default function Header() {
         </nav>
 
         <div className="hidden items-center gap-6 lg:flex">
-          <Link
-            href="/contact"
-            className="bg-ocre px-6 py-3 text-[11px] font-bold uppercase tracking-[0.2em] text-navy shadow-[0_8px_28px_rgba(201,169,97,0.45)] ring-1 ring-bone/40 transition hover:bg-bone hover:shadow-[0_10px_32px_rgba(201,169,97,0.6)]"
-          >
-            Contact
-          </Link>
+          <div className="flex flex-col items-center gap-1.5">
+            <Link
+              href="/contact"
+              className="bg-ocre px-6 py-3 text-[11px] font-bold uppercase tracking-[0.2em] text-navy shadow-[0_8px_28px_rgba(201,169,97,0.45)] ring-1 ring-bone/40 transition hover:bg-bone hover:shadow-[0_10px_32px_rgba(201,169,97,0.6)]"
+            >
+              Être recontacté
+            </Link>
+            <a href="tel:+33624067681" className="text-[11px] tracking-[0.12em] text-white/70 transition hover:text-gold">06 24 06 76 81</a>
+          </div>
 
           <Link href="/cabinet" className="flex items-center gap-4">
             <div className="relative h-14 w-[46px] flex-none">
@@ -91,10 +95,10 @@ export default function Header() {
         <div className="flex items-center gap-3 md:hidden">
           <Link
             href="/contact"
-            className="bg-ocre px-4 py-2.5 text-[11px] font-bold uppercase tracking-[0.18em] text-navy shadow-[0_6px_20px_rgba(201,169,97,0.45)]"
+            className="bg-ocre px-3 py-2.5 text-[10px] font-bold uppercase tracking-[0.14em] text-navy shadow-[0_6px_20px_rgba(201,169,97,0.45)]"
             onClick={() => setOpen(false)}
           >
-            Contact
+            Être recontacté
           </Link>
           <button className="text-sm uppercase tracking-[0.25em] text-gold" onClick={() => setOpen(!open)}>
             {open ? "Fermer" : "Menu"}
@@ -110,7 +114,9 @@ export default function Header() {
             {links.map(([label, href]) => (
               <Link key={href} href={href} onClick={() => setOpen(false)}>{label}</Link>
             ))}
-            <Link href="/contact" onClick={() => setOpen(false)} className="block py-3">Contact</Link>
+            <Link href="/contact" onClick={() => setOpen(false)} className="block py-3">Être recontacté</Link>
+            <a href="tel:+33624067681" className="block py-3 text-white/70">06 24 06 76 81</a>
+            <p className="pt-2 text-[11px] normal-case tracking-normal text-white/45">222 boulevard Saint-Germain, Paris 7ème</p>
           </nav>
         </div>
       )}
