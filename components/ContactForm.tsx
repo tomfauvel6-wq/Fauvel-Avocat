@@ -1,9 +1,16 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 export default function ContactForm() {
   const [status, setStatus] = useState("");
+  const [prefill, setPrefill] = useState("");
+  useEffect(() => {
+    try {
+      const v = window.sessionStorage.getItem("fa-assistant-summary");
+      if (v) { setPrefill("Situation décrite à l’assistant :\n" + v + "\n\n"); window.sessionStorage.removeItem("fa-assistant-summary"); }
+    } catch {}
+  }, []);
 
   async function handleSubmit(event: React.FormEvent<HTMLFormElement>) {
     event.preventDefault();
@@ -67,7 +74,7 @@ export default function ContactForm() {
       </div>
       <div className="flex flex-1 flex-col">
         <label htmlFor="cf-message" className="sr-only">Votre message</label>
-        <textarea id="cf-message" name="message" required className="min-h-40 w-full flex-1 border border-navy/15 bg-transparent px-5 py-4 text-[15px] outline-none focus:border-gold" placeholder="Votre message" />
+        <textarea id="cf-message" name="message" required defaultValue={prefill} key={prefill} className="min-h-40 w-full flex-1 border border-navy/15 bg-transparent px-5 py-4 text-[15px] outline-none focus:border-gold" placeholder="Votre message" />
       </div>
       <p className="text-[13px] leading-6 text-navy/60">
         En envoyant ce message, vous acceptez que les informations transmises soient utilisées pour répondre à votre demande. Elles ne sont communiquées à aucun tiers.

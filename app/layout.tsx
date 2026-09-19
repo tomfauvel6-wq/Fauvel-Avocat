@@ -5,6 +5,7 @@ import Header from "../components/Header";
 import Footer from "../components/Footer";
 import Providers from "../components/Providers";
 import CookieBanner from "../components/CookieBanner";
+import AssistantWidget from "../components/AssistantWidget";
 
 const baseUrl = "https://fauvel-avocat.fr";
 
@@ -118,6 +119,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         </Script>
         <Script src="https://www.googletagmanager.com/gtag/js?id=AW-18445047687" strategy="afterInteractive" />
         <CookieBanner />
+        <AssistantWidget />
 
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(legalServiceJsonLd) }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(personJsonLd) }} />

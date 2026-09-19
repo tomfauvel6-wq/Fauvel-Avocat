@@ -62,7 +62,7 @@ export default function ContactPage() {
           </div>
 
           {/* DROITE, encadré Votre demande */}
-          <div className="order-2 flex flex-col bg-ivory p-6 text-navy shadow-[0_26px_75px_rgba(7,26,51,0.25)] sm:p-8 md:p-10 lg:order-none">
+          <div id="formulaire" className="order-2 flex flex-col bg-ivory p-6 text-navy shadow-[0_26px_75px_rgba(7,26,51,0.25)] sm:p-8 md:p-10 lg:order-none">
             <p className="mb-3 text-[11px] font-bold uppercase tracking-[0.32em] text-gold-ink">Votre demande</p>
             <h2 className="mb-7 font-serif text-3xl leading-tight tracking-[-0.03em] text-navy">Écrire au cabinet.</h2>
             <ContactForm />
