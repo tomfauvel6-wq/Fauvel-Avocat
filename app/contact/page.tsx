@@ -25,7 +25,7 @@ export default function ContactPage() {
   return (
     <main>
       {/* HEADER + FORMULAIRE côte à côte */}
-      <section className="relative overflow-hidden bg-navy pt-32 pb-14 text-white md:pt-40 md:pb-24">
+      <section className="relative overflow-hidden bg-navy pt-32 pb-14 text-white md:pt-40 md:pb-24 lg:pt-44">
         <div className="pointer-events-none absolute inset-x-0 top-0 h-1/2 bg-gradient-to-b from-white/[0.06] to-transparent" />
 
         <div className="container-premium relative grid gap-12 lg:grid-cols-[0.9fr_1.1fr] lg:gap-16 lg:items-start">

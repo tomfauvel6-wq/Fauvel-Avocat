@@ -20,20 +20,20 @@ export default function Header() {
 
   return (
     <header className="fixed left-0 top-0 z-50 w-full border-b border-white/10 bg-navy text-white">
-      <div className="container-premium flex h-24 items-center justify-between gap-8">
+      <div className="container-premium flex h-24 items-center justify-between gap-8 lg:h-28">
         <Link href="/" className="flex items-center gap-4" onClick={() => setOpen(false)}>
           <div className="relative h-14 w-[44px] flex-none">
             <Image src="/images/header/monogramme-gauche.jpg" alt="" fill sizes="44px" className="object-contain" />
           </div>
-          <div className="leading-tight">
-            <div className="font-serif text-lg uppercase tracking-[0.18em]">Fauvel Avocat</div>
+          <div className="leading-tight lg:space-y-0.5">
+            <div className="font-serif text-lg uppercase tracking-[0.18em] lg:text-xl">Fauvel Avocat</div>
             <div className="text-[10px] uppercase tracking-[0.32em] text-gold">Avocat fiscaliste - Barreau de Paris</div>
             <div className="mt-0.5 hidden text-[10px] tracking-[0.08em] text-white/55 sm:block">222 boulevard Saint-Germain, Paris 7ème</div>
           </div>
         </Link>
 
         <nav className="hidden flex-1 items-center justify-center gap-8 text-[12px] font-semibold uppercase tracking-[0.15em] text-white/90 md:flex">
-          <div className="group relative flex h-24 items-center" onMouseEnter={() => setDomainesOpen(true)} onMouseLeave={() => setDomainesOpen(false)}>
+          <div className="group relative flex h-24 items-center lg:h-28" onMouseEnter={() => setDomainesOpen(true)} onMouseLeave={() => setDomainesOpen(false)}>
             <Link
               href="/domaines-dintervention"
               className="relative py-2 uppercase tracking-[0.16em] transition-colors hover:text-gold after:absolute after:-bottom-0.5 after:left-0 after:h-px after:w-0 after:bg-gold after:transition-all after:duration-300 hover:after:w-full"

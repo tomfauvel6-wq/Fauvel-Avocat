@@ -29,7 +29,7 @@ const requestAreas: [string, string][] = [
 export default function HomePage() {
   return (
     <main>
-      <section className="relative grid min-h-[100svh] overflow-hidden bg-navy pt-24 text-white lg:h-[100svh] lg:min-h-[640px] lg:grid-cols-[52%_48%]">
+      <section className="relative grid min-h-[100svh] overflow-hidden bg-navy pt-24 text-white lg:pt-28 lg:h-[100svh] lg:min-h-[640px] lg:grid-cols-[52%_48%]">
         <AnimatedHomeColumn />
         <div className="absolute inset-0 z-10 bg-gradient-to-r from-navy via-navy/55 to-navy/5" />
         <div className="relative z-20 flex items-center">

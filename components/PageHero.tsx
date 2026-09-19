@@ -34,7 +34,7 @@ export default function PageHero({
   return (
     <section
       className={`relative flex items-center overflow-hidden bg-navy text-white ${
-        compact ? "pt-28 lg:min-h-[58vh]" : "pt-24 lg:min-h-screen"
+        compact ? "pt-28 lg:min-h-[58vh] lg:pt-32" : "pt-24 lg:min-h-screen lg:pt-28"
       }`}
     >
       {/* Voile lumineux discret en haut, sans halo agressif : bleu légèrement plus clair */}
