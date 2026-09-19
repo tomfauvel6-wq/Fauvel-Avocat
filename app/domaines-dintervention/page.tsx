@@ -4,7 +4,7 @@ import PageHero from "../../components/PageHero";
 
 export const metadata: Metadata = {
   title: "Domaines d’intervention",
-  description: "Fiscalité, droit des sociétés et droit commercial : domaines d’intervention de Fauvel Avocat à Paris et dans toute la France.",
+  description: "Fiscalité et droit des sociétés : domaines d’intervention de Fauvel Avocat à Paris et dans toute la France.",
   alternates: { canonical: "/domaines-dintervention" }
 };
 
@@ -36,20 +36,6 @@ const blocs = [
     ],
     href: "/societe",
     cta: "Voir le droit des sociétés"
-  },
-  {
-    id: "commercial",
-    title: "Droit commercial",
-    kicker: "Relations d’affaires",
-    text: "Des contrats du quotidien aux litiges entre partenaires, le cabinet sécurise les relations commerciales et défend les intérêts du client en cas de différend.",
-    services: [
-      "Rédaction et négociation de contrats commerciaux",
-      "Recouvrement d’impayés et procédures d’urgence",
-      "Rupture de relations commerciales établies",
-      "Contentieux entre partenaires économiques"
-    ],
-    href: "/commercial",
-    cta: "Voir le droit commercial"
   }
 ];
 
@@ -59,7 +45,7 @@ export default function DomainesPage() {
       <PageHero
         imageSrc="/images/hero/domaines.jpg"
         kicker="Domaines d’intervention"
-        title="Droit fiscal, droit des sociétés, droit commercial."
+        title="Droit fiscal et droit des sociétés."
         description="Une intervention complète, en conseil comme en contentieux, au service des dirigeants, des entrepreneurs et des particuliers patrimoniaux."
         imageLabel="Architecture des domaines"
         quote="L’État est le plus froid de tous les monstres froids."

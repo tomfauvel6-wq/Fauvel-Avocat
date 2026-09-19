@@ -40,10 +40,9 @@ export default function Footer() {
         </div>
 
         <div className="space-y-3 text-[15px] text-white/70">
-          <p className="mb-4 text-[11px] font-bold uppercase tracking-[0.22em] text-gold">Société &amp; commercial</p>
+          <p className="mb-4 text-[11px] font-bold uppercase tracking-[0.22em] text-gold">Droit des sociétés</p>
           <p><Link href="/domaines-dintervention/droit-des-societes" className="transition hover:text-gold">Droit des sociétés</Link></p>
           <p><Link href="/domaines-dintervention/structuration-de-holdings" className="transition hover:text-gold">Holdings</Link></p>
-          <p><Link href="/domaines-dintervention/droit-commercial" className="transition hover:text-gold">Droit commercial</Link></p>
           <p><Link href="/domaines-dintervention" className="transition hover:text-gold">Domaines d’intervention</Link></p>
         </div>
 

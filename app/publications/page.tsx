@@ -12,8 +12,7 @@ export const metadata: Metadata = {
 const macroSections: { label: string; categories: string[] }[] = [
   { label: "Fiscal", categories: ["Contrôle fiscal", "Fiscalité patrimoniale", "Fiscalité internationale"] },
   { label: "Sociétés", categories: ["Droit des sociétés"] },
-  { label: "Cabinet", categories: ["Cabinet"] },
-  { label: "Commercial", categories: ["Droit commercial"] }
+  { label: "Cabinet", categories: ["Cabinet"] }
 ];
 
 export default function PublicationsPage() {
@@ -40,7 +39,7 @@ export default function PublicationsPage() {
       <PageHero
         kicker="Publications"
         title="Analyses et réflexions juridiques."
-        description="Des publications à vocation pratique consacrées aux situations fiscales, sociétaires et commerciales : contrôle fiscal, structuration, gouvernance, contrats et contentieux."
+        description="Des publications à vocation pratique consacrées aux situations fiscales et sociétaires : contrôle fiscal, structuration, gouvernance, contrats et contentieux."
         imageSrc="/images/hero/publications.jpg"
         quote="La science du droit est la connaissance des choses divines et humaines, la science du juste et de l’injuste."
         quoteAuthor="Ulpien"
@@ -55,7 +54,7 @@ export default function PublicationsPage() {
               {total} publications, classées par domaine.
             </h2>
             <p className="mt-5 text-[16px] leading-8 text-navy/72 dark:text-white/65">
-              Quatre domaines : fiscal, sociétés, cabinet et commercial. Les publications les plus récentes apparaissent directement ; les autres se déroulent d’un clic.
+              Trois domaines : fiscal, sociétés et cabinet. Les publications les plus récentes apparaissent directement ; les autres se déroulent d’un clic.
             </p>
           </div>
 

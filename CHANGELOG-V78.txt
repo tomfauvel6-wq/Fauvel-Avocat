@@ -1,9 +1,0 @@
-CHANGELOG V78 — Fauvel Avocat
-================================
-
-Accueil, bandeau Présentation
-- Sur grand écran, la photo occupe désormais toute la hauteur de la colonne de texte
-  (du titre « Présentation » à la citation de Kant), au lieu d un cadre fixe de 292 px de
-  large centré. Colonne photo légèrement élargie. Sur mobile, cadre 3/4 inchangé.
-
-Build : succès.

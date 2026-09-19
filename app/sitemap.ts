@@ -14,7 +14,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/fiscal",
     "/fiscal/declaration-et-regularisation",
     "/societe",
-    "/commercial",
     "/contentieux-fiscal",
     "/holding-patrimoniale",
     "/mentions-legales",
@@ -27,8 +26,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/domaines-dintervention/fiscalite-des-dirigeants",
     "/domaines-dintervention/structuration-de-holdings",
     "/domaines-dintervention/crypto-actifs",
-    "/domaines-dintervention/droit-des-societes",
-    "/domaines-dintervention/droit-commercial"
+    "/domaines-dintervention/droit-des-societes"
   ];
 
   const articleRoutes = articles.map((article) => article.path);

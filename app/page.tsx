@@ -22,8 +22,7 @@ export const metadata: Metadata = {
 
 const requestAreas: [string, string][] = [
   ["Fiscal", "Contrôle fiscal, réclamation, contentieux, fiscalité patrimoniale, résidence fiscale ou actifs étrangers."],
-  ["Société", "Création, transformation, holding, pacte d’associés, gouvernance ou opérations sur capital."],
-  ["Commercial", "Contrats commerciaux, impayés, rupture de relations ou litiges entre partenaires économiques."]
+  ["Société", "Création, transformation, holding, pacte d’associés, gouvernance ou opérations sur capital."]
 ];
 
 
@@ -37,7 +36,7 @@ export default function HomePage() {
           <div className="container-premium py-10 lg:mr-0 lg:max-w-[630px]">
             <p className="mb-6 text-[11px] font-semibold uppercase tracking-[0.34em] text-gold">Fauvel Avocat · Paris</p>
             <h1 className="font-serif text-[2.35rem] leading-[1.05] tracking-[-0.035em] text-ivory md:text-6xl lg:text-[4.45rem]">
-              Fiscalité, droit des sociétés et contentieux des affaires.
+              Fiscalité et droit des sociétés.
             </h1>
             <div className="my-8 h-px w-16 bg-gold" />
             <p className="max-w-xl text-[17px] leading-8 text-white/80 md:text-lg">

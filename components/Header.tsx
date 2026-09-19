@@ -11,8 +11,7 @@ const links = [
 
 const domainesMenu = [
   ["Droit fiscal", "/fiscal"],
-  ["Droit des sociétés", "/societe"],
-  ["Droit commercial", "/commercial"]
+  ["Droit des sociétés", "/societe"]
 ];
 
 export default function Header() {

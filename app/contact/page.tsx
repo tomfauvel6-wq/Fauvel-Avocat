@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   alternates: { canonical: "/contact" },
   openGraph: {
     title: "Contacter Fauvel Avocat",
-    description: "Présenter une situation fiscale, patrimoniale, sociétaire ou commerciale à Fauvel Avocat.",
+    description: "Présenter une situation fiscale, patrimoniale ou sociétaire à Fauvel Avocat.",
     url: "/contact",
     images: ["/images/og-image.png"]
   }

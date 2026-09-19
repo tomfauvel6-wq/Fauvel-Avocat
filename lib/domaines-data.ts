@@ -42,20 +42,6 @@ export const domaines = [
     keywords: "avocat droit des sociétés, création société, restructuration, statuts, pacte associés"
   },
   {
-    slug: "droit-commercial",
-    title: "Droit commercial",
-    kicker: "Relations d’affaires",
-    description: "Contrats commerciaux, négociation, litiges entre partenaires et sécurisation des relations économiques.",
-    intro: "Le cabinet intervient dans les relations contractuelles et commerciales, en conseil comme en phase précontentieuse.",
-    items: [
-      { title: "Contrats commerciaux", text: "Rédaction, revue et négociation de contrats de prestation, distribution, partenariat, apport d’affaires ou cession." },
-      { title: "Litiges commerciaux", text: "Analyse des manquements contractuels, inexécution, rupture de relations commerciales et stratégie de règlement." },
-      { title: "Négociation", text: "Accompagnement des discussions sensibles, protocoles transactionnels et sécurisation des concessions réciproques." },
-      { title: "Cession de fonds ou d’activité", text: "Analyse juridique et fiscale des opérations de cession, garanties et formalités." }
-    ],
-    keywords: "avocat droit commercial, contrats commerciaux, litige commercial, négociation commerciale"
-  },
-  {
     slug: "fiscalite-internationale",
     title: "Fiscalité internationale",
     kicker: "International",

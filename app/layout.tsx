@@ -76,8 +76,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       addressRegion: "Île-de-France"
     },
     founder: { "@id": `${baseUrl}/#tom-fauvel` },
-    slogan: "Fiscalité, droit des sociétés, droit commercial et contentieux",
-    knowsAbout: ["Contrôle fiscal", "Contentieux fiscal", "Fiscalité patrimoniale", "Fiscalité internationale", "Fiscalité franco-américaine", "IFI", "Crypto-actifs", "Droit des sociétés", "Structuration de holdings", "Droit commercial"]
+    slogan: "Fiscalité, droit des sociétés et contentieux fiscal",
+    knowsAbout: ["Contrôle fiscal", "Contentieux fiscal", "Fiscalité patrimoniale", "Fiscalité internationale", "Fiscalité franco-américaine", "IFI", "Crypto-actifs", "Droit des sociétés", "Structuration de holdings"]
   };
 
   const personJsonLd = {

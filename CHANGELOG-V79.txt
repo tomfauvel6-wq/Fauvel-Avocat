@@ -1,0 +1,13 @@
+CHANGELOG V79 — Fauvel Avocat
+================================
+
+Retrait du droit commercial et du « contentieux des affaires »
+- Titre de l accueil : « Fiscalité et droit des sociétés. »
+- Pages /commercial et /domaines-dintervention/droit-commercial supprimées, avec redirections
+  permanentes vers /domaines-dintervention (les adresses étaient indexées).
+- Retiré du menu, du pied de page (colonne renommée « Droit des sociétés »), du bloc contact
+  de l accueil, de la page Domaines d intervention (deux blocs : fiscal, sociétés), de la page
+  Publications (trois sections), des métadonnées, du JSON-LD et du plan du site.
+- Entrée « droit commercial » retirée des données de domaines.
+
+Build : succès, 28 routes.

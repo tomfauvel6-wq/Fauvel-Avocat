@@ -11,6 +11,8 @@ const nextConfig = {
   },
   async redirects() {
     return [
+      { source: "/commercial", destination: "/domaines-dintervention", permanent: true },
+      { source: "/domaines-dintervention/droit-commercial", destination: "/domaines-dintervention", permanent: true },
       { source: "/honoraires", destination: "/methode-du-cabinet", permanent: true },
       { source: "/recherche", destination: "/", permanent: true }
     ];
