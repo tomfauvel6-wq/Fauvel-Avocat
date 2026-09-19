@@ -81,7 +81,7 @@ export default function Header() {
             >
               Être recontacté
             </Link>
-            <a href="tel:+33624067681" className="text-[11px] tracking-[0.12em] text-white/70 transition hover:text-gold">06 24 06 76 81</a>
+            <a href="tel:+33624067681" className="border border-ocre/70 px-4 py-1.5 text-[11px] font-semibold tracking-[0.16em] text-ocre transition hover:bg-ocre/10">06 24 06 76 81</a>
           </div>
 
           <Link href="/cabinet" className="flex items-center gap-4">

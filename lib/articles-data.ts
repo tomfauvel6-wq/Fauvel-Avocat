@@ -90,6 +90,81 @@ export const articles: Article[] = [
       { question: "Le régime s’applique-t-il automatiquement ?", answer: "Non. Il s’exerce sur option, formalisée dans la déclaration de résultats, et suppose le respect de l’ensemble des conditions légales." }
     ],
     related: ["fiscalite-franco-americaine", "esfp-avocat"]
+  },
+  {
+    slug: "contester-taxe-fonciere",
+    path: "/fiscalite-patrimoniale/contester-taxe-fonciere",
+    category: "Fiscalité patrimoniale",
+    title: "Taxe foncière : comment contester son avis",
+    shortTitle: "Contester sa taxe foncière",
+    description: "Avis de taxe foncière reçu à l’automne : délai de réclamation, motifs de contestation (valeur locative, exonérations, dégrèvements) et marche à suivre.",
+    publishedAt: "19 septembre 2026",
+    updatedAt: "19 septembre 2026",
+    readingTime: "5 minutes",
+    tags: ["taxe foncière", "réclamation", "valeur locative", "dégrèvement", "exonération"],
+    intro: "Les avis de taxe foncière arrivent entre fin août et fin septembre, pour un paiement à la mi-octobre. Beaucoup de propriétaires les règlent sans les lire ; certains y trouveraient pourtant une erreur de surface, une catégorie de logement dépassée ou une exonération oubliée. La réclamation est simple, gratuite et ouverte plus longtemps qu’on ne le croit.",
+    sections: [
+      { id: "delai", title: "Le délai pour réclamer", body: ["La réclamation peut être présentée jusqu’au 31 décembre de l’année qui suit celle de la mise en recouvrement. Pour une taxe foncière 2026, il est donc possible de contester jusqu’au 31 décembre 2027.", "Réclamer ne dispense pas de payer à l’échéance : la taxe reste due tant que l’administration n’a pas statué, sauf à demander expressément un sursis de paiement, qui peut supposer des garanties au-delà d’un certain montant. Dans la plupart des cas, il est plus simple de payer puis d’obtenir un dégrèvement."] },
+      { id: "valeur-locative", title: "Vérifier la base : la valeur locative", body: ["La taxe foncière est assise sur la valeur locative cadastrale du bien, elle-même fonction de la surface pondérée, de la catégorie du logement, des éléments de confort et de coefficients propres à la commune. Ces données figurent sur la fiche d’évaluation du local, que l’on peut demander au centre des impôts fonciers.", "Les erreurs sont fréquentes : surface annexe comptée deux fois, catégorie attribuée il y a des décennies et jamais révisée, dépendance ou piscine qui n’existe plus, travaux de démolition non pris en compte. Chaque écart se traduit directement sur la cotisation, et pour les années suivantes.", "Le taux, en revanche, est voté par la commune et l’intercommunalité : il ne se conteste pas devant l’administration fiscale."] },
+      { id: "exonerations", title: "Exonérations et dégrèvements à ne pas oublier", body: ["Les constructions nouvelles bénéficient, sous conditions et sur déclaration dans les 90 jours de l’achèvement, d’une exonération temporaire de deux ans. Certaines communes l’ont réduite, d’où l’intérêt de vérifier.", "Des exonérations ou dégrèvements existent aussi en fonction de l’âge, du handicap et des ressources du propriétaire, ainsi qu’un plafonnement de la taxe en fonction du revenu. Ils sont en principe appliqués automatiquement, mais un changement de situation en cours d’année peut être passé inaperçu.", "Enfin, un logement resté vacant au moins trois mois pour des raisons indépendantes de la volonté du propriétaire, ou un local professionnel inexploité, peut ouvrir droit à un dégrèvement partiel."] },
+      { id: "demarche", title: "La marche à suivre", body: ["La réclamation se fait par la messagerie de l’espace particulier sur impots.gouv.fr ou par courrier au service dont dépend l’immeuble. Elle doit identifier le bien, l’imposition contestée et les motifs, et joindre les justificatifs : plans, photographies, factures de démolition, attestation de vacance.", "En cas de rejet ou de silence prolongé, le contribuable peut saisir le tribunal administratif. À ce stade, une analyse préalable de la fiche d’évaluation et des règles de calcul permet d’apprécier les chances de succès avant d’engager la démarche."] }
+    ],
+    references: ["CGI, articles 1380 et suivants (taxe foncière sur les propriétés bâties)", "CGI, articles 1494 et suivants (valeur locative)", "CGI, articles 1383, 1389, 1390, 1391 et 1391 B (exonérations et dégrèvements)", "LPF, article R*196-2 (délai de réclamation)"],
+    faq: [
+      { question: "Puis-je contester une taxe foncière déjà payée ?", answer: "Oui. La réclamation est possible jusqu’au 31 décembre de l’année suivant la mise en recouvrement, que la taxe ait été payée ou non. En cas de succès, le trop-versé est restitué." },
+      { question: "Ma taxe a fortement augmenté cette année, est-ce contestable ?", answer: "La hausse résulte le plus souvent de la revalorisation annuelle des bases et des taux votés localement, qui ne se contestent pas. En revanche, si elle traduit une modification de la valeur locative du bien (nouvelle catégorie, surface, éléments de confort), elle peut être discutée." }
+    ],
+    related: ["donation-avant-31-decembre", "regime-mere-fille"]
+  },
+  {
+    slug: "donation-avant-31-decembre",
+    path: "/fiscalite-patrimoniale/donation-avant-31-decembre",
+    category: "Fiscalité patrimoniale",
+    title: "Donation avant le 31 décembre 2026 : ce qui compte vraiment",
+    shortTitle: "Donner avant le 31 décembre",
+    description: "Abattements, rappel fiscal, exonération temporaire des dons pour la résidence principale (jusqu’au 31 décembre 2026), Dutreil : les points à vérifier avant une donation de fin d’année.",
+    publishedAt: "19 septembre 2026",
+    updatedAt: "19 septembre 2026",
+    readingTime: "6 minutes",
+    tags: ["donation", "abattement", "rappel fiscal", "don familial", "article 790 A bis", "pacte Dutreil"],
+    intro: "La fin d’année concentre les projets de transmission : bilan patrimonial, réunion de famille, échéances fiscales. En 2026, une raison supplémentaire s’ajoute : l’exonération temporaire des dons d’argent affectés à la résidence principale prend fin le 31 décembre. Avant de signer, quelques vérifications évitent de gaspiller un abattement ou de créer un risque inutile.",
+    sections: [
+      { id: "abattements", title: "Les abattements et le rappel fiscal", body: ["Chaque parent peut donner à chaque enfant 100 000 euros en franchise de droits, un grand-parent 31 865 euros à chaque petit-enfant, et d’autres abattements existent entre frères et sœurs ou avec les neveux et nièces. Ces abattements se reconstituent tous les quinze ans.", "C’est le mécanisme du rappel fiscal : toute donation consentie depuis moins de quinze ans est prise en compte pour calculer les droits sur la nouvelle. Donner tôt, c’est faire courir ce délai plus tôt ; d’où l’intérêt, à situation égale, de ne pas repousser une donation décidée.", "S’y ajoute le don familial de sommes d’argent de 31 865 euros, exonéré si le donateur a moins de 80 ans et le bénéficiaire est majeur, cumulable avec l’abattement ordinaire."] },
+      { id: "exoneration-2026", title: "L’exonération temporaire qui expire le 31 décembre 2026", body: ["La loi de finances pour 2025 a créé une exonération exceptionnelle pour les dons d’argent consentis à un enfant, petit-enfant, arrière-petit-enfant, ou à défaut à un neveu ou une nièce : 100 000 euros par donateur et par bénéficiaire, dans la limite de 300 000 euros reçus par bénéficiaire, sans droits.", "La condition est l’emploi des fonds, dans les six mois, à l’acquisition d’un logement neuf ou en état futur d’achèvement affecté à la résidence principale, ou à des travaux de rénovation énergétique de la résidence principale, avec une obligation de conservation de cinq ans. Le dispositif se cumule avec les abattements ordinaires et n’entre pas dans le rappel fiscal.", "Il ne s’applique qu’aux dons réalisés jusqu’au 31 décembre 2026. Pour un projet immobilier en cours, le calendrier de la donation et celui de l’acquisition doivent donc être coordonnés dès maintenant."] },
+      { id: "entreprise", title: "Transmettre une entreprise : le pacte Dutreil", body: ["Pour les titres de société ou une entreprise individuelle, le pacte Dutreil permet, sous conditions, d’exonérer 75 % de la valeur transmise. La loi de finances pour 2026 a allongé l’engagement individuel de conservation, portant la durée totale des engagements à huit ans au minimum.", "Une donation Dutreil ne s’improvise pas en décembre : engagement collectif préalable, éligibilité de l’activité, condition de direction, actifs non professionnels à isoler. Mais lorsque la préparation est faite, la fin d’année est un moment naturel pour la signer."] },
+      { id: "vigilance", title: "Trois points de vigilance", body: ["La chronologie d’abord : donner des titres juste avant de les vendre est licite et efficace, à condition que la donation soit réelle et précède un accord de cession ; l’inverse expose à une requalification.", "La forme ensuite : une donation d’immeuble ou de titres suppose un acte notarié ; un don d’argent se déclare dans le mois, en ligne ou par formulaire, même s’il est exonéré.", "Le contexte enfin : le projet de loi de finances pour 2027 sera discuté à l’automne. Les règles exposées ici sont celles en vigueur à la date de publication ; un projet engagé sur la base d’un dispositif temporaire doit être sécurisé avant son échéance."] }
+    ],
+    references: ["CGI, articles 779 et 790 B (abattements)", "CGI, article 784 (rappel fiscal des donations antérieures)", "CGI, article 790 G (dons familiaux de sommes d’argent)", "CGI, article 790 A bis (exonération temporaire résidence principale, jusqu’au 31 décembre 2026)", "CGI, articles 787 B et 787 C (pacte Dutreil)"],
+    faq: [
+      { question: "Le don de 100 000 euros pour la résidence principale est-il cumulable avec l’abattement classique ?", answer: "Oui. L’exonération de l’article 790 A bis s’ajoute à l’abattement de 100 000 euros entre parent et enfant et au don familial de 31 865 euros, et n’est pas prise en compte dans le rappel fiscal des quinze ans." },
+      { question: "Faut-il un notaire pour un don d’argent ?", answer: "Non, un don manuel d’argent se déclare simplement à l’administration dans le mois. Un acte notarié devient nécessaire pour un immeuble, des titres de société ou lorsqu’on souhaite organiser précisément les conditions de la donation." }
+    ],
+    related: ["contester-taxe-fonciere", "comptes-etrangers-non-declares"]
+  },
+  {
+    slug: "comptes-etrangers-non-declares",
+    path: "/fiscalite-internationale/comptes-etrangers-non-declares",
+    category: "Fiscalité internationale",
+    title: "Comptes à l’étranger non déclarés : régulariser avant le contrôle",
+    shortTitle: "Comptes à l’étranger non déclarés",
+    description: "Obligation de déclaration des comptes, contrats d’assurance-vie et actifs numériques détenus à l’étranger : sanctions, prescription de dix ans, échange automatique d’informations et démarche de régularisation.",
+    publishedAt: "19 septembre 2026",
+    updatedAt: "19 septembre 2026",
+    readingTime: "6 minutes",
+    tags: ["comptes à l’étranger", "formulaire 3916", "régularisation", "échange automatique", "prescription"],
+    intro: "Un compte ouvert pendant des études à l’étranger, un contrat souscrit avant une expatriation, un portefeuille de crypto-actifs sur une plateforme étrangère : l’oubli de déclaration est fréquent et rarement volontaire. Il n’en est pas moins sanctionné, et l’administration dispose aujourd’hui, par l’échange automatique d’informations, des données pour le détecter. Régulariser avant d’être interrogé change tout.",
+    sections: [
+      { id: "obligation", title: "Ce qui doit être déclaré", body: ["Toute personne domiciliée en France doit déclarer chaque année, avec sa déclaration de revenus, les comptes bancaires ouverts, détenus, utilisés ou clos à l’étranger, ainsi que les contrats d’assurance-vie et de capitalisation souscrits hors de France et les comptes d’actifs numériques ouverts auprès de plateformes étrangères.", "La déclaration se fait sur les formulaires 3916 et 3916 bis, compte par compte, même pour un compte inactif ou au solde nul. C’est l’existence du compte qui est déclarée, pas seulement les revenus qu’il produit."] },
+      { id: "sanctions", title: "Ce que coûte l’oubli", body: ["Chaque compte non déclaré expose à une amende forfaitaire par compte et par année, plus lourde lorsque le compte est situé dans un État non coopératif. Ces amendes s’additionnent sur toutes les années non prescrites.", "Le délai de reprise de l’administration est porté de trois à dix ans pour les revenus liés aux avoirs non déclarés, sauf exception pour les petits soldes, et les rappels d’impôt sont assortis d’une majoration de 80 %.", "Surtout, l’administration peut demander l’origine des fonds ; en l’absence de justification, les sommes sont réputées constituer des revenus imposables, et l’origine non établie des avoirs peut donner lieu à une taxation aux droits de mutation au taux le plus élevé."] },
+      { id: "detection", title: "Pourquoi l’administration sait", body: ["Depuis 2017, la France reçoit chaque année, dans le cadre de l’échange automatique d’informations, les données des comptes détenus par ses résidents dans plus d’une centaine de pays : identité, solde, revenus. Les flux arrivent à l’automne et alimentent des demandes de justification dans les mois qui suivent.", "Un courrier de l’administration demandant des informations sur des avoirs à l’étranger n’est donc jamais une demande de routine : il signifie que la donnée est déjà connue, et le délai de réponse est de soixante jours."] },
+      { id: "regulariser", title: "Régulariser : comment et pourquoi maintenant", body: ["La régularisation spontanée consiste à déposer des déclarations rectificatives pour les années non prescrites, à déclarer les comptes et à acquitter les impôts, intérêts et pénalités correspondants. Une demande de modération des pénalités peut accompagner la démarche, l’administration tenant compte du caractère spontané et de la bonne foi.", "L’intérêt est double : maîtriser le calendrier et le périmètre plutôt que de subir un contrôle, et se placer dans une situation bien plus favorable pour la discussion des pénalités. Chaque dossier suppose une analyse préalable : années concernées, nature des revenus, conventions fiscales applicables, ordre des démarches."] }
+    ],
+    references: ["CGI, articles 1649 A, 1649 AA et 1649 bis C (obligations déclaratives)", "CGI, article 1736 IV (amendes)", "CGI, article 1729-0 A (majoration de 80 %)", "CGI, article 755 (taxation des avoirs d’origine non justifiée)", "LPF, articles L. 23 C et L. 169 (demande de justifications, délai de reprise de dix ans)"],
+    faq: [
+      { question: "Un compte étranger vide ou fermé doit-il être déclaré ?", answer: "Oui, dès lors qu’il a été ouvert, utilisé ou clos au cours de l’année, quel que soit son solde. L’amende s’applique à l’absence de déclaration, indépendamment des revenus." },
+      { question: "Est-il trop tard pour régulariser si j’ai reçu un courrier de l’administration ?", answer: "La régularisation n’est plus spontanée, mais une réponse complète et documentée dans le délai de soixante jours reste déterminante pour limiter les conséquences. Il faut alors agir vite et de façon structurée." }
+    ],
+    related: ["fiscalite-franco-americaine", "donation-avant-31-decembre"]
   }
 ];
 
