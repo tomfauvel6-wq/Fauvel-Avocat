@@ -95,6 +95,10 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="fr">
       <body>
+        {/* Google Tag Manager (noscript) */}
+        <noscript>
+          <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PCN6DHGC" height="0" width="0" style={{ display: "none", visibility: "hidden" }} />
+        </noscript>
         <Providers>
           <Header />
           {children}
@@ -116,6 +120,10 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             gtag('js', new Date());
             gtag('config', 'AW-18445047687');
           `}
+        </Script>
+        {/* Google Tag Manager, chargé après les réglages de consentement */}
+        <Script id="google-tag-manager" strategy="beforeInteractive">
+          {`(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-PCN6DHGC');`}
         </Script>
         <Script src="https://www.googletagmanager.com/gtag/js?id=AW-18445047687" strategy="afterInteractive" />
         <CookieBanner />

@@ -33,7 +33,7 @@ export default function HomePage() {
         <AnimatedHomeColumn />
         <div className="absolute inset-0 z-10 bg-gradient-to-r from-navy via-navy/55 to-navy/5" />
         <div className="relative z-20 flex items-center">
-          <div className="container-premium py-10 lg:mr-0 lg:max-w-[630px]">
+          <div className="container-premium py-10 pb-24 lg:mr-0 lg:max-w-[630px] lg:pb-10">
             <p className="mb-6 text-[11px] font-semibold uppercase tracking-[0.34em] text-gold">Fauvel Avocat · Paris</p>
             <h1 className="font-serif text-[2.35rem] leading-[1.05] tracking-[-0.035em] text-ivory md:text-6xl lg:text-[4.45rem]">
               Fiscalité et droit des sociétés.
@@ -51,8 +51,8 @@ export default function HomePage() {
               <span className="text-[10px] font-semibold uppercase tracking-[0.3em] text-gold/80">Formation</span>
               <span className="h-px flex-1 bg-white/15" />
             </div>
-            <p className="mt-3 text-[13px] leading-7 tracking-[0.02em] text-white/55">
-              <span className="text-white/90">Paris 1 Panthéon-Sorbonne</span><span className="mx-2 text-gold/50">·</span><span className="text-white/90">Paris 2 Panthéon-Assas</span><span className="mx-2 text-gold/50">·</span>EFB<span className="mx-2 text-gold/50">·</span>IDPA
+            <p className="mt-3 whitespace-nowrap text-[12px] leading-7 tracking-[0.01em] text-white/55 sm:text-[13px] sm:tracking-[0.02em]">
+              <span className="text-white/90"><span className="sm:hidden">Paris 1 Sorbonne</span><span className="hidden sm:inline">Paris 1 Panthéon-Sorbonne</span></span><span className="mx-1.5 text-gold/50 sm:mx-2">·</span><span className="text-white/90"><span className="sm:hidden">Paris 2 Assas</span><span className="hidden sm:inline">Paris 2 Panthéon-Assas</span></span><span className="mx-1.5 text-gold/50 sm:mx-2">·</span>EFB<span className="mx-1.5 text-gold/50 sm:mx-2">·</span>IDPA
             </p>
           </div>
         </div>

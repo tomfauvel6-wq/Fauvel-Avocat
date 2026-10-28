@@ -125,9 +125,9 @@ export default function AssistantWidget() {
         <button
           type="button"
           onClick={() => setOpen(true)}
-          className="fixed bottom-5 left-5 z-40 border border-gold/50 bg-navy px-4 py-3 text-[11px] font-bold uppercase tracking-[0.18em] text-ivory shadow-[0_16px_40px_rgba(7,26,51,0.35)] transition hover:border-gold hover:text-gold md:bottom-6 md:left-6"
+          className="fixed bottom-4 right-4 z-40 border border-gold/50 bg-navy px-4 py-2.5 text-[10px] font-bold uppercase tracking-[0.14em] text-ivory shadow-[0_16px_40px_rgba(7,26,51,0.35)] transition hover:border-gold hover:text-gold md:bottom-6 md:left-6 md:right-auto md:py-3 md:text-[11px] md:tracking-[0.18em]"
         >
-          Une question ? Jarvis vous répond
+          Poser une question à l’assistant
         </button>
       )}
 

@@ -45,7 +45,7 @@ export default function CookieBanner() {
     <div
       role="dialog"
       aria-label="Gestion des cookies"
-      className="fixed inset-x-4 bottom-4 z-50 mx-auto max-w-md border border-gold/40 bg-navy p-5 text-white shadow-[0_20px_60px_rgba(7,26,51,0.45)] md:inset-x-auto md:right-6 md:bottom-6"
+      className="fixed inset-x-4 bottom-16 z-50 mx-auto max-w-md md:bottom-6 border border-gold/40 bg-navy p-5 text-white shadow-[0_20px_60px_rgba(7,26,51,0.45)] md:inset-x-auto md:right-6 md:bottom-6"
     >
       <p className="text-[14px] leading-6 text-white/85">
         Ce site utilise des cookies.{" "}

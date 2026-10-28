@@ -20,14 +20,14 @@ export default function Header() {
 
   return (
     <header className="fixed left-0 top-0 z-50 w-full border-b border-white/10 bg-navy text-white">
-      <div className="container-premium flex h-24 items-center justify-between gap-8 lg:h-28">
-        <Link href="/" className="flex items-center gap-4" onClick={() => setOpen(false)}>
+      <div className="container-premium flex h-24 items-center justify-between gap-4 sm:gap-8 lg:h-28">
+        <Link href="/" className="flex items-center gap-3 sm:gap-4" onClick={() => setOpen(false)}>
           <div className="relative h-14 w-[44px] flex-none">
             <Image src="/images/header/monogramme-gauche.jpg" alt="" fill sizes="44px" className="object-contain" />
           </div>
           <div className="leading-tight lg:space-y-0.5">
-            <div className="font-serif text-lg uppercase tracking-[0.18em] lg:text-xl">Fauvel Avocat</div>
-            <div className="text-[10px] uppercase tracking-[0.32em] text-gold">Avocat fiscaliste - Barreau de Paris</div>
+            <div className="whitespace-nowrap font-serif text-[15px] uppercase tracking-[0.12em] sm:text-lg sm:tracking-[0.18em] lg:text-xl">Fauvel Avocat</div>
+            <div className="whitespace-nowrap text-[9px] uppercase tracking-[0.18em] text-gold sm:text-[10px] sm:tracking-[0.32em]">Avocat fiscaliste<span className="hidden sm:inline"> - Barreau de Paris</span></div>
             <div className="mt-0.5 hidden text-[10px] tracking-[0.08em] text-white/55 sm:block">222 boulevard Saint-Germain, Paris 7ème</div>
           </div>
         </Link>
@@ -92,16 +92,16 @@ export default function Header() {
         </div>
 
         <div className="flex items-center gap-3 md:hidden">
+          <button className="text-[13px] uppercase tracking-[0.2em] text-gold" onClick={() => setOpen(!open)}>
+            {open ? "Fermer" : "Menu"}
+          </button>
           <Link
             href="/contact"
-            className="bg-ocre px-3 py-2.5 text-[10px] font-bold uppercase tracking-[0.14em] text-navy shadow-[0_6px_20px_rgba(201,169,97,0.45)]"
+            className="whitespace-nowrap bg-ocre px-3 py-2.5 text-[10px] font-bold uppercase tracking-[0.12em] text-navy shadow-[0_6px_20px_rgba(201,169,97,0.45)]"
             onClick={() => setOpen(false)}
           >
             Être recontacté
           </Link>
-          <button className="text-sm uppercase tracking-[0.25em] text-gold" onClick={() => setOpen(!open)}>
-            {open ? "Fermer" : "Menu"}
-          </button>
         </div>
       </div>
 

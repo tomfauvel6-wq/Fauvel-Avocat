@@ -1,0 +1,10 @@
+CHANGELOG V89 — Fauvel Avocat
+================================
+
+Google Tag Manager (GTM-PCN6DHGC)
+- Script GTM ajouté en chargement prioritaire, après les réglages de consentement (Consent
+  Mode v2 : tout refusé par défaut, accordé au clic sur le bandeau cookies).
+- Bloc noscript (iframe) placé immédiatement après l ouverture de <body>.
+- La balise Google Ads directe (AW-18445047687) reste en place : ne pas la recréer dans GTM
+  sous peine de compter deux fois les conversions, ou me demander de la retirer du code si
+  elle est migrée dans GTM.
